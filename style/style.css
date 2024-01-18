@@ -1,0 +1,350 @@
+:root {
+  --title-text: rgba(48, 48, 48, 1);
+  --orange: #FF6C00;
+  --text-color-white: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-style: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 1280px;
+  overflow: clip;
+  background-color: #fff;
+}
+
+/* ================== */
+.btn {
+  border-radius: 25px;
+  border: 1px solid #FF6C00;
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+/* ===================== nav============= */
+
+.nav {
+  display: flex;
+
+}
+
+.leftnav {
+  max-width: 102px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.lefnav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+.leftnav__item-line {
+  width: 1px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: var(--title-text);
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.leftnav__item-social {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.leftnav__link {
+  color: var(--title-text);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.leftnav__link:hover {
+  color: var(--orange);
+  transition: color 0.2s ease;
+}
+
+.leftnav__item-line:hover {
+  background-color: var(--orange);
+  transition: background-color 0.2s ease;
+}
+
+.logoimg {
+  margin: 32px 32px 0 0;
+}
+
+/* ================== */
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url('../images/Slider\ img\ 3.png');
+  object-fit: cover;
+}
+
+.navigation__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1120px;
+  max-height: 120px;
+}
+
+.main__navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main__navigation-list:first-child {
+  padding-left: 40px;
+}
+
+.main__navigation-link {
+  color: var(--text-color-white);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.contact__navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact__navigation-list:last-child {
+  padding-right: 55px;
+}
+
+.contact__navigation-link:nth-child(1) {
+  color: var(--text-color-white);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.contact__navigation-link:nth-child(2) {
+  color: var(--text-color-white);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.main__navigation-link:hover,
+.contact__navigation-link:hover {
+  color: rgba(255, 108, 0, 1);
+  transition: color 0.3s ease;
+}
+
+/* =================== */
+
+.navhero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 152px;
+
+}
+
+.navhero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text__navhero {}
+
+.text__navhero-subtitle {}
+
+.subtitle__navhero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle__navhero-line {
+  width: 1px;
+  height: 60px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  background: rgba(157, 164, 189, 0.60);
+}
+
+.subtitle__navhero-content {
+  margin-left: 80px;
+  color: rgba(157, 164, 189, 0.60);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.text__navhero-hone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-white);
+  font-family: Raleway;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+
+.text__navhero-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9DA4BD;
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+  letter-spacing: 0.36px;
+}
+
+.navhero__slider {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+}
+
+.navhero__slider-lines {
+  position: absolute;
+  right: 15%;
+  top: 10%;
+}
+
+.navhero__slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btnlink1::before {
+  position: absolute;
+  content: "";
+  background: rgba(157, 164, 189, 0.60);
+  width: 1px;
+  height: 60px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  right: 90px;
+}
+
+.btnlink2::after {
+  position: absolute;
+  content: "";
+  background: rgba(157, 164, 189, 0.60);
+  width: 1px;
+  height: 60px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  right: 77px;
+}
+
+.navhero__slider-btnlink {
+  position: relative;
+  color: rgba(157, 164, 189, 0.60);
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  padding-bottom: 49px;
+  padding-right: 60px;
+}
+
+.navhero__slider-btnlink:hover {
+  color: var(--text-color-white);
+  transition: color 0.5s ease;
+}
+
+.btnlink2:hover::after {
+  background: var(--text-color-white);
+  transition: background 0.5s ease;
+}
+
+.btnlink1:hover::before {
+  background: var(--text-color-white);
+  transition: background 0.5s ease;
+}
