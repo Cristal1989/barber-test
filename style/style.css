@@ -43,7 +43,9 @@ a {
   min-height: 100%;
   width: 1280px;
   overflow: clip;
+  margin: 0 auto;
   background-color: #fff;
+
 }
 
 /* ================== */
@@ -63,7 +65,6 @@ a {
 
 .nav {
   display: flex;
-
 }
 
 .leftnav {
@@ -127,8 +128,6 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   background-image: url('../images/Slider\ img\ 3.png');
   object-fit: cover;
 }
@@ -140,6 +139,45 @@ a {
 
   width: 1120px;
   max-height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__navigation-overlay {
+  position: fixed;
+  min-width: 480px;
+  height: 500px;
+  top: 0;
+  left: 365px;
+
+  display: none;
+  transform: translate(-100%);
+  z-index: 2;
+}
+
+.overlay__box {
+  display: flex;
+}
+
+.overlay__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: -250px;
+}
+
+.overlay__item {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.navigation__top:hover .main__navigation-overlay {
+  transform: translate(0);
+}
+
+@media (max-width 480px) {
+  .main__navigation-overlay {
+    display: flex;
+  }
 }
 
 .main__navigation-list {
@@ -186,6 +224,7 @@ a {
 }
 
 .contact__navigation-link:nth-child(2) {
+
   color: var(--text-color-white);
   font-family: "Open Sans";
   font-size: 12px;
@@ -200,6 +239,22 @@ a {
 .contact__navigation-link:hover {
   color: rgba(255, 108, 0, 1);
   transition: color 0.3s ease;
+}
+
+.top__btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.top__btn::before {
+  position: fixed;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/burger.svg");
+  top: 35px;
+  right: 100px;
+  display: none;
 }
 
 /* =================== */
@@ -219,10 +274,6 @@ a {
   flex-direction: column;
   gap: 20px;
 }
-
-.text__navhero {}
-
-.text__navhero-subtitle {}
 
 .subtitle__navhero {
   display: flex;
