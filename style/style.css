@@ -8,6 +8,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgba(25, 28, 38, 0.2);
+}
+
+img {
+  vertical-align: 0;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--text-color-white);
+  outline: none;
+}
+
 a,
 p,
 h1,
@@ -41,10 +56,11 @@ a {
 
 .wrapper {
   min-height: 100%;
-  width: 1280px;
+  width: 1260px;
   overflow: clip;
   margin: 0 auto;
   background-color: #fff;
+
 }
 
 /* ================== */
@@ -60,7 +76,13 @@ a {
   background-color: inherit;
 }
 
+
+
 /* ===================== nav============= */
+
+.header {
+  padding-right: 0;
+}
 
 .nav {
   display: flex;
@@ -735,7 +757,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 130px;
-  margin-bottom: 130px;
+  padding-bottom: 130px;
   background-color: rgba(247, 247, 247, 1)
 }
 
@@ -945,8 +967,8 @@ a {
 }
 
 .nametel__input:hover {
-  border: none;
-  border-bottom: 1px solid var(--text-color-white);
+  /* border: none;
+  border-bottom: 1px solid var(--text-color-white); */
   transition: 0.3s ease;
 }
 
@@ -985,16 +1007,16 @@ a {
 }
 
 .textarea__message:hover {
-  border: none;
-  border-bottom: 1px solid var(--text-color-white);
+  /* border: none;
+  border-bottom: 1px solid var(--text-color-white); */
   transition: 0.3s ease;
 }
 
-.textarea__message:active {
+/* .textarea__message:active {
   border: none;
   border-bottom: 1px solid var(--text-color-white);
   transition: 0.3s ease;
-}
+} */
 
 .textarea__message:hover::placeholder {
   color: var(--text-color-white)
